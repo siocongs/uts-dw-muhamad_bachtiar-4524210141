@@ -1,8 +1,8 @@
 # Wedding Card Generator
 
-Nama Lengkap  : Muhamad Bachtiar
-NIM           : 4524210141
-Topik Generator yang Dipilih  : Generator Kartu Undangan Pernikahan
+Nama Lengkap  : Muhamad Bachtiar <br>
+NIM           : 4524210141 <br>
+Topik Generator yang Dipilih  : Generator Kartu Undangan Pernikahan <br>
 
 - [X] Repositori GitHub sudah dibuat
 - [X] Melakukan minimal 3 commit
