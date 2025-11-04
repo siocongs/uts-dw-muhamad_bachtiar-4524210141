@@ -70,8 +70,6 @@ Aplikasi web ini memungkinkan pengguna mengisi data undangan pernikahan pada **P
 
 ### ✅ Checklist Penilaian UTS
 
-### ✅ Checklist Penilaian UTS
-
 | Kriteria                                             | Status |
 | ---------------------------------------------------- | ------ |
 | Repositori GitHub sudah dibuat                       | [x]    |
