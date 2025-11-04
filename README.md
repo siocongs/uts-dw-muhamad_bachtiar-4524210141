@@ -91,5 +91,5 @@ Silakan digunakan sebagai referensi belajar, tidak untuk plagiarisme.
 
 ### 🙏 Ucapan Terima Kasih
 
-Terima kasih kepada Dosen Pengampu dan teman-teman.
-Semoga aplikasi ini bermanfaat dan memberikan inspirasi ✨
+Terima kasih kepada [Bapak Adi (Dosen Pengampu)](https://github.com/adiwp)
+Semoga web ini bermanfaat dan memenuhi tugas UTS sesuai dengan Kriteria ✨
