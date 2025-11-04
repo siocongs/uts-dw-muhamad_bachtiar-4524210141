@@ -320,5 +320,55 @@ form textarea {
     transform: rotate(180deg);
 }
 
+.footer {
+    background: #5b4a3a; /* brown gold tone */
+    color: #f8e8d4;
+    padding: 30px 0;
+    margin-top: 60px;
+    text-align: center;
+    border-top: 3px solid #d7b48a;
+  }
+  
+  .footer-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  .footer-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+  
+  .footer-desc {
+    font-size: 14px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+  }
+  
+  .footer-links a {
+    color: #f9d8ab;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  /* spacing on mobile */
+  @media (max-width: 600px) {
+    .footer-title { font-size: 18px; }
+    .footer-links a { display: block; margin: 6px 0; }
+  }
+  
+
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap');
