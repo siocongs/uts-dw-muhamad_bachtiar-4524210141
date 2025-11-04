@@ -1,0 +1,324 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+  }
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6rem;
+    background-color: #c89f7e;
+    color: #212529;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 15px 30px;
+    background: #fff;
+    border-bottom: 3px solid #a7865e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #8b6a4a;
+    font-family: "Cormorant Garamond", serif;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #6b4f35;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #a7865e;
+}
+
+/* Mobile Menu */
+.toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: #6b4f35;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 200px;
+        background: #fff;
+        flex-direction: column;
+        padding: 15px;
+        border-bottom-left-radius: 10px;
+        border-left: 3px solid #a7865e;
+        border-bottom: 3px solid #a7865e;
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .toggle {
+        display: block;
+    }
+}
+
+
+/* Breadcrumb */
+.breadcrumb-area {
+    background: #f1f1f1;
+    padding: 60px 0;
+    width: 77%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.breadcrumb-container {
+    text-align: center;
+}
+
+.breadcrumb-title {
+    font-size: clamp(1.3rem, 2.5vw, 7rem);
+    font-weight: 700;
+    color: #232323;
+    margin-bottom: 5px;
+}
+
+.breadcrumb-nav {
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+}
+
+.breadcrumb-nav a {
+    color: #a7865e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.breadcrumb-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+.main-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: rem;
+    display: grid;
+}
+
+form,
+article {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#form-undangan {
+    margin: 20px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 1 1.5rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+form input[type="text"],
+form input[type="number"],
+form input[type="file"],
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ba780c;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.main-container img {
+
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;  /* biar sudut halus */
+    display: block;
+    margin: 0 auto;       /* center gambar */
+}
+
+/* Perkecil lagi gambar di layar kecil */
+@media (max-width: 576px) {
+    .main-container img {
+        max-width: 200px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .main-container {
+      grid-template-columns: 1fr 1.5fr;
+    }
+  }
+
+.preview-undangan {
+    text-align: center;
+    margin: 20px;
+}
+
+.kartu-undangan {
+    width: 450px;
+    margin: auto;
+    background: #fff8f2;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 2px solid #e5d4c3;
+    position: relative;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.title-wedding {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #a7865e;
+    letter-spacing: 2px;
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+.title-wedding:hover {
+    color: #a7865e;
+}
+
+.title-wedding::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #a78c5e;
+    bottom: 0px;
+    left: 50%;
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.title-wedding:hover:hover:after {
+    width: 100%;
+}
+
+.foto-pengantin {
+    width: 90%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #d8c1a9;
+}
+
+.nama-pengantin {
+    font-size: 26px;
+    margin: 5px 0;
+    font-family: "Momo Signature", cursive;;
+    color: #5b4a3a;
+    font-weight: 700;
+}
+
+.dan {
+    font-size: 22px;
+    color: #b19376;
+    font-style: italic;
+}
+
+.tanggal {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #a37b55;
+    font-weight: 600;
+}
+
+.deskripsi {
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 0 10px;
+    color: #6a5a4a;
+}
+
+/* Label 'Kepada Yth:' */
+.kepada {
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #3f3a35;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: .9;
+}
+
+/* Nama penerima */
+.penerima {
+    font-size: 20px;
+    margin-top: 5px;
+    color: #5b4a3a;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 10px 16px;
+    border: 2px dashed #c8b29a;
+    display: inline-block;
+    border-radius: 10px;
+    background: rgba(255, 245, 233, 0.8);
+}
+
+
+.flower-top, .flower-bottom {
+    background-image: url('https://i.ibb.co/Jcwg1yf/floral-gold.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 50px;
+    margin: auto;
+}
+
+.flower-top {
+    margin-bottom: 10px;
+}
+
+.flower-bottom {
+    margin-top: 10px;
+    transform: rotate(180deg);
+}
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap');
