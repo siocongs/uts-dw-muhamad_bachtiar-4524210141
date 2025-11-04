@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Generator | by MuhamadBachtiar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MANG Studio</div>
+        <ul class="nav-links">
+            <li><a href="?page=home">Home</a></li>
+            <li><a href="?page=generate">Undangan Generator</a></li>
+            <li><a href="?page=about">About</a></li>
+        </ul>
+    
+        <div class="toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+    </nav>
+    
+
+    <section class="breadcrumb-area">
+        <div class="breadcrumb-container">
+            <h2 class="breadcrumb-title">Undangan Pernikahan Generator</h2>
+            <p class="breadcrumb-nav">
+                <a href="?page=home">Home</a> / Undangan Pernikahan Generator
+            </p>
+        </div>
+    </section>
+
+    <div class="main-container">
+        <!-- Panel Control -->
+        <form action="/submit-form" id="form-undangan" method="post">
+            <fieldset>
+            <legend>Pengisian Data Pengantin</legend>
+
+            <p>
+                <label for="nama-pengantin-pria">Nama Pengantin Pria</label><br />
+                <input
+                type="text"
+                id="nama-pengantin-pria"
+                name="pengantin_pria"
+                required
+                maxlength="80"
+                placeholder="Masukkan nama Pengantin Pria..."
+                />
+            </p>
+
+            <p>
+                <label for="nama-pengantin-wanita">Nama Pengantin Wanita</label><br />
+                <input
+                type="text"
+                id="nama-pengantin-wanita"
+                name="pengantin_wanita"
+                required
+                maxlength="80"
+                placeholder="Masukkan nama Pengantin Wanita..."
+                />
+            </p>
+
+            <p>
+                <label for="gambar-pengantin">Foto Pengantin</label><br />
+                <input type="file" id="gambar-pengantin" name="gambar_pengantin" required>
+            </p>
+
+            <p>
+                <label for="deskripsi">Deskripsi Undangan</label><br />
+                <textarea id="deskripsi" rows="3" placeholder="Tulis deskripsi singkat..."></textarea>
+            </p>
+
+            <p>
+                <label for="tanggal-pernikahan">Tanggal Pernikahan</label><br />
+                <input type="date" id="tanggal" name="tanggal" required>
+            </p>
+
+            <p>
+                <label for="penerima-undangan">Penerima Undangan</label><br />
+                <input type="text" id="penerima-undangan" name="penerima_undangan" required>
+            </p>
+            </fieldset>
+        </form>
+
+        <!-- Panel Preview -->
+        <article class="preview-undangan">
+            <h2>Preview Undangan</h2>
+
+            <div class="kartu-undangan">
+                <div class="flower-top"></div>
+
+                <h3 class="title-wedding">THE WEDDING OF</h3>
+
+                <img id="preview-gambar" class="foto-pengantin" 
+                    src="https://i.ibb.co/Jcwg1yf/floral-gold.png"
+                    alt="Foto Pengantin">
+
+                <div class="info-pengantin">
+                    <h2 id="preview-nama-pengantin-pria" class="nama-pengantin">Nama Pengantin Pria</h2>
+                    <h2 class="dan">&</h2>
+                    <h2 id="preview-nama-pengantin-wanita" class="nama-pengantin">Nama Pengantin Wanita</h2>
+                    <p id="preview-deskripsi" class="deskripsi">
+                        Deskripsi undangan akan muncul di sini.
+                    </p>
+                    <h3>Tanggal</h3>
+                    <p id="preview-tanggal-pernikahan" class="tanggal">Tanggal Pernikahan Akan Muncul Disini</p>
+                    <h4 class="kepada">Kepada Yth:</h4>
+                    <p id="preview-penerima-undangan" class="penerima">Nama Penerima Undangan</p>
+                    
+                    
+                    
+                </div>
+
+                <div class="flower-bottom"></div>
+            </div>
+        </article>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
