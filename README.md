@@ -62,11 +62,13 @@ Aplikasi web ini memungkinkan pengguna mengisi data undangan pernikahan pada **P
 
 ### 📸 Preview Fitur
 
-```
+---
+
 ![Preview Undangan](assets/preview.png)
-```
 
 ---
+
+### ✅ Checklist Penilaian UTS
 
 ### ✅ Checklist Penilaian UTS
 
